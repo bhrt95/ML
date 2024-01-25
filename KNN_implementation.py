@@ -71,3 +71,12 @@ pred_y = lr.predict(test_x)
 
 print(classification_report(test_y,pred_y), "LR")
 
+from sklearn.svm import SVC
+
+svm = SVC()
+svm.fit(train_x,train_y)
+svm.fit(train_x,train_y)
+pred_y = svm.predict(test_x)
+
+print(classification_report(test_y,pred_y), "SVM")
+
